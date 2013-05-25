@@ -11,9 +11,10 @@
 [Dd]ebug/
 [Rr]elease/
 x64/
-build/
 [Bb]in/
 [Oo]bj/
+build/package
+build/TestResults
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
