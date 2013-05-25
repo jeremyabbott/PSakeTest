@@ -82,10 +82,15 @@ task CommonAssemblyInfo {
     CreateCommonAssemblyInfo "$version" $projectName "$source_dir\CommonAssemblyInfo.cs"
 }
 
+task ProjectSourceDir {
+	Write-Host "$projectSourceDir"
+}
+
 # Package the project web code
 # Copy only the necessary files, exclude .cs files
 task PackageProject -depends Compile {
     Write-Host "Packaging $projectName"
+	Write-Host "Project Source Directory: $projectSourceDir"
     CopyWebSiteFiles $projectSourceDir "$projectPackageDir\content\"
 
     # deploy.ps1 is used by Octopus Deploy
