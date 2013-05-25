@@ -1,5 +1,5 @@
 
-$projectName = "projectName"
+$projectName = "PSakeTest"
 $projectSource = "$pwd\content\"
 $projectDestination = "C:\inetpub\wwwroot\$projectName\"
 
