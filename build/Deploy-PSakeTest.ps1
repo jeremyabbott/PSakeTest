@@ -1,5 +1,5 @@
 
-$projectName = "PSakeTest"
+$projectName = "SDNUG"
 $projectSource = "$pwd\content\"
 $projectDestination = "C:\Web\$projectName-$OctopusEnvironmentName\"
 
